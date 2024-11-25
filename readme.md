@@ -16,7 +16,7 @@ A classic memory card matching game built with vanilla JavaScript, HTML, and CSS
 
 ## 🚀 Live Demo
 
-[Play the game here](https://your-username.github.io/memory-card-game)
+[Play the game here](https://[https://memorycarddgame.netlify.app]
 
 ## 🛠️ Technologies Used
 
