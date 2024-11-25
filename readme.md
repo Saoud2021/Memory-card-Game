@@ -2,7 +2,7 @@
 
 A classic memory card matching game built with vanilla JavaScript, HTML, and CSS. Test your memory by matching pairs of cards while tracking your moves and time.
 
-![Memory Game Preview](https://raw.githubusercontent.com/username/memory-card-game/main/assets/preview.png)
+![Memory Game Preview](https://github.com/Saoud2021/Memory-card-Game/blob/main/assets/memorycarddgame.netlify.app_.png)
 
 ## 🎯 Features
 
