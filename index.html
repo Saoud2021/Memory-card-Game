@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Card Game</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Memory Card Game</h1>
+    </div>
+    <div class="instructions">
+        <h2>Game Instructions</h2>
+        <ol>
+            <li>Flip the cards to find the matching pairs.</li>
+            <li>The game ends when all pairs are matched.</li>
+            <li>The player's performance is tracked by the number of moves and time taken.</li>
+        </ol>
+    </div>
+    <!-- <div class="popup-box ">
+        <div class="popup">
+            <h3>Congratulaitons</h3>
+            <p class="popup-text">You won </p>
+        </div> -->
+    </div>
+    <div class="container">
+        <p>Moves: <span id="moves">0</span></p>
+        <p>Timer: <span id="timer">00:00</span></p>
+        <div class="board">
+            <div class="card">
+                <img class="front-face" src="./assets/car.png" alt="car">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/car.png" alt="car">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/cat.png" alt="car">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/cat.png" alt="car">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/flower.png" alt="flower">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/flower.png" alt="flower">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/fox.png" alt="fox">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/fox.png" alt="fox">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/lion.png" alt="lion">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/lion.png" alt="lion">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/money.png" alt="money">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/money.png" alt="money">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/orange.png" alt="orange">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/orange.png" alt="orange">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/pizza.png" alt="pizza">
+                <img class="back-face">
+            </div>
+            <div class="card">
+                <img class="front-face" src="./assets/pizza.png" alt="pizza">
+                <img class="back-face">
+            </div>
+        </div>
+        <button class="restart-game">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

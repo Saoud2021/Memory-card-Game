@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  text-align: center;
+  margin: 1.5rem;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #fdbb2dd7, #22c1c3, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+  perspective: 1000px;
+}
+
+.card {
+  width: 100px;
+  height: 120px;
+  background-color: #fdbb2dd7;
+  border: 1px solid #22c1c3;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 1px;
+  position: relative;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.card.flipped {
+  background-color: #fff;
+  transform: rotateY(180deg);
+  box-shadow: -3px 3px 1px;
+}
+
+.card.matched {
+  background-color: #90ee90;
+  cursor: default;
+}
+.restart-game {
+  margin: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-size: 1.5rem;
+  background-color: #c40808;
+  color: #fff;
+  border-radius: 0.6rem;
+  border: none;
+  box-shadow: 3px 3px 10px #c40808;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+/* .card:hover, */
+.restart-game:hover {
+  box-shadow: 4px 4px 4px #000000;
+  transition: box-shadow 0.3s ease-in-out;
+  user-select: none;
+}
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+/* SVG added from a site called pattern.monster  */
+.back-face {
+  transform: rotateY(0deg);
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(1.2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%2390ee90ff'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='%23fdba2bd7'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='none' fill='%2322c1c3ff'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+/* .popup {
+  background-color: wheat;
+  width: 30%;
+  top: 0%;
+  left: 50%;
+  padding: 1rem;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0.01);
+  border-radius: 0.8rem;
+  visibility: visible;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, 70%) scale(1);
+  box-shadow: 3px 3px 10px;
+}
+.popup-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-text {
+  margin-top: 1rem;
+  line-height: 0.8rem;
+  font-size: 24px;
+}
+  .container:active {
+    filter: blur(20px);
+  } */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
