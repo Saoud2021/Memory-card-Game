@@ -87,16 +87,4 @@ During the development of this game, several key challenges were overcome:
 - Create multiplayer mode
 - Add mobile touch support
 
-## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/memory-card-game/issues).
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
-
-## 👏 Acknowledgments
-
-- Card images sourced from [source-name]
-- Pattern background generated using [pattern.monster](https://pattern.monster)
-- Thanks to [mention any tutorials or resources that helped]
